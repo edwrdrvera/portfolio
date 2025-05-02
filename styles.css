@@ -55,8 +55,8 @@ main {
 
 .hero-greeting {
     font-family: 'DepartureMono', monospace;
-    font-size: 20px;
-    margin-bottom: 1.5rem;
+    font-size: 16px;
+    margin-bottom: 1rem;
 }
 
 .hero-bio {
@@ -69,15 +69,15 @@ main {
 
 /* Contact section styling */
 .contact-container {
-    margin-top: 36px;
+    margin-top: 24px;
     text-align: left;
     width: fit-content;
 }
 
 .contact-heading {
     font-family: 'DepartureMono', monospace;
-    font-size: 20px;
-    margin-bottom: 1rem;
+    font-size: 16px;
+    margin-bottom: 0.8rem;
 }
 
 .contact-links a {
@@ -86,9 +86,9 @@ main {
     text-decoration: none;
     display: flex;  
     margin-right: 0;
-;
     margin-bottom: 0.5rem;
-    font-size: 20px; 
+    line-height: 1rem;
+    font-size: 16px; 
 }
 
 .contact-links a:hover {
