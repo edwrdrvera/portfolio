@@ -1,0 +1,58 @@
+/* Base */
+@import "base/typography.css";
+@import "base/fonts.css";
+@import "base/variables.css";
+@import "base/reset.css";
+
+/* Components */
+@import "components/cv/cv-content.css";
+
+/* Layout */
+@import "layout/container.css";
+@import "layout/sidebar.css";
+@import "layout/mobile-nav.css";
+@import "components/mobile-menu.css";
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+@media (max-width: 1200px) {
+	.cv-header h1 {
+		font-size: 5rem;
+		line-height: 1;
+		letter-spacing: -0.05em;
+	}
+}
+
+@media (max-width: 992px) {
+	.main-content {
+		margin-left: 0;
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	#mobile-nav {
+		display: block;
+	}
+
+	.cv-header h1 {
+		font-size: 4rem;
+		letter-spacing: -0.05em;
+	}
+}
+/* @media (min-width: 768px) {
+	.skills-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+} */
+/* 
+@media (max-width: 1086px) {
+	.container {
+		max-width: 100%;
+	}
+} */
