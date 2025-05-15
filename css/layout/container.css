@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Layout Components
+   ========================================================================== */
+.container {
+	display: flex;
+	min-height: 100vh;
+}
+
+.main-content {
+	margin-left: 12rem;
+	padding: 2rem;
+	/* width: calc(100% - 12rem); */
+	max-width: none;
+}

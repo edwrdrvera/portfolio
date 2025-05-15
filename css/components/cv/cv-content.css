@@ -1,0 +1,77 @@
+/* CV styles */
+.main-content {
+	margin-bottom: 40px;
+	margin-top: 5rem;
+}
+
+.cv-header h1 {
+	font-size: 6rem;
+	text-transform: uppercase;
+	letter-spacing: -0.5rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+	font-family: SFProMedium;
+	color: #333;
+}
+
+.cv-header {
+	margin-bottom: 5rem;
+}
+
+h2 {
+	font-family: SFProMedium;
+	font-size: 1.25rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+	margin-top: 2.5rem;
+}
+
+h3 {
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+
+.cv-section {
+	margin-bottom: 2.5rem;
+}
+
+.experience-item {
+	border-bottom: 1px solid #e2e8f0;
+	padding-bottom: 1.25rem;
+	margin-bottom: 1.5rem;
+}
+
+.experience-item:last-child {
+	border-bottom: none;
+}
+
+.experience-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+
+.experience-description {
+	color: #666;
+	margin-bottom: 0.75rem;
+}
+
+ul {
+	list-style-type: disc;
+	padding-left: 1.25rem;
+}
+
+ul li {
+	margin-bottom: 0.25rem;
+}
+
+.skills-grid {
+	grid-template-columns: repeat(2, 1fr);
+	display: grid;
+	gap: 1rem;
+}
+
+.date {
+	color: #666;
+}

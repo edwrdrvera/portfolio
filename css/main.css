@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Main Stylesheet
+   ========================================================================== */
+
+/* Base */
+@import "base/variables.css";
+@import "base/reset.css";
+@import "base/typography.css";
+@import "base/fonts.css";
+
+/* Layout */
+@import "layout/container.css";
+@import "layout/sidebar.css";
+@import "layout/mobile-nav.css";
+
+/* Components */
+@import "components/sections.css";
+@import "components/tech-stack.css";
+@import "components/project-card.css";
+@import "components/mobile-menu.css";
+
+@media (max-width: 992px) {
+	#mobile-nav {
+		display: block;
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	.main-content {
+		margin-left: 0;
+		padding: 5rem 1rem 1rem;
+		width: 100%;
+	}
+
+	#menu-toggle {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	#mobile-nav {
+		display: block;
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	.main-content {
+		margin-left: 0;
+		padding: 5rem 1rem 1rem;
+		width: 100%;
+	}
+
+	.bio-text {
+		font-size: 1.5rem;
+	}
+
+	/* .project-grid {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	} */
+}

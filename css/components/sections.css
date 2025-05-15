@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Content Sections
+   ========================================================================== */
+.intro-section {
+	margin-bottom: 2.5rem;
+}
+
+.subtle-text {
+	color: #888;
+	font-size: 0.875rem;
+	margin-bottom: 0.25rem;
+}
+
+.projects-section {
+	margin-top: 2.5rem;
+}
+
+.bio-section {
+	max-width: 100%;
+}
+
+.tech-stack-section {
+	margin-top: 2.5rem;
+
+}

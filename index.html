@@ -3,36 +3,246 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Edward Rivera</title>
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="css/main.css" />
 		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+		/>
+		<title>エドワード - Edward Rivera</title>
 	</head>
 	<body>
-		<main>
-			<div class="hero-container">
-				<p class="hero-greeting">Hello there!</p>
-				<h1 class="hero-bio">
-					Edward is an aspiring Full Stack Developer, currently studying
-					"Application Development and Delivery" in Red River College
-					Polytechnic.
-				</h1>
-			</div>
-
-			<div class="contact-container">
-				<p class="contact-heading">[ CONTACT ]</p>
-				<div class="contact-links">
-					<a href="https://github.com/edwrdrvera" target="_blank">Github</a>
-					<a
-						href="https://www.linkedin.com/in/edward-rivera-e1213"
-						target="_blank"
-						>LinkedIn
-					</a>
-					<a href="mailto:earivera.dev@outlook.com">Mail</a>
+		<div class="container">
+			<!-- Mobile Navigation -->
+			<nav id="mobile-nav">
+				<div class="mobile-header">
+					<h1 class="logo">
+						<a href="/">エドワード</a>
+					</h1>
+					<button id="menu-toggle">Menu</button>
 				</div>
-			</div>
-		</main>
-		<footer>
-			<p>Portfolio coming soon.</p>
-		</footer>
+				<div class="mobile-menu" id="mobile-menu">
+					<a href="/" class="active">Home</a>
+					<a href="/about.html">About</a>
+					<a href="/cv.html">CV</a>
+					<div class="contact-links">
+						<a
+							href="https://github.com/edwrdrvera"
+							class="contact-link"
+							target="_blank"
+							rel="noopener noreferrer"
+							>GitHub</a
+						>
+						<a
+							href="https://www.linkedin.com/in/edward-rivera-e1213"
+							class="contact-link"
+							target="_blank"
+							rel="noopener noreferrer"
+							>LinkedIn</a
+						>
+						<a href="mailto:earivera.dev@outlook.com" class="contact-link"
+							>Mail</a
+						>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Sidebar -->
+			<aside class="sidebar">
+				<h1 class="logo">
+					<a href="/">エドワード</a>
+				</h1>
+
+				<nav class="sidebar-nav">
+					<div class="nav-links">
+						<a href="about.html">About</a>
+						<a href="cv.html">CV</a>
+					</div>
+
+					<nav class="contact-section">
+						<h3 class="contact-header">Contact</h3>
+						<div class="contact-links">
+							<a
+								href="https://github.com/edwrdrvera"
+								class="contact-link"
+								target="_blank"
+								rel="noopener noreferrer"
+								>GitHub</a
+							>
+							<a
+								href="https://www.linkedin.com/in/edward-rivera-e1213"
+								class="contact-link"
+								target="_blank"
+								rel="noopener noreferrer"
+								>LinkedIn</a
+							>
+							<a href="mailto:earivera.dev@outlook.com" class="contact-link"
+								>Mail</a
+							>
+						</div>
+					</nav>
+				</nav>
+			</aside>
+
+			<!-- Main Content -->
+			<main class="main-content">
+				<div class="intro-section">
+					<div class="subtle-text">/yooh·ko·su/ /ようこそ/</div>
+					<h1 class="greeting">Hello there, ようこそ!</h1>
+				</div>
+
+				<div class="bio-section">
+					<p class="bio-text">
+						Edward is a Full Stack Developer currently studying Application
+						Development and Delivery at Red River College Polytechnic. Using
+						his studies to build a strong foundation in creating and deploying
+						modern web applications. He is currently expanding his front-end
+						capabilities by learning frameworks like React and is eager to
+						apply this, along with his skills in API development and agile
+						methodologies, to personal projects this summer.
+					</p>
+				</div>
+				<!-- Projects Section -->
+				<section class="projects-section">
+					<h2 class="page-title">PROJECTS</h2>
+					<div class="project-grid">
+						<a
+							href="https://github.com/edwrdrvera/portfolio"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="my-custom-link"
+						>
+							<article class="project-card">
+								<img src="images/portfolio.png" class="project-image" />
+								<div class="project-info">
+									<div class="title-year-container">
+										<h3 class="project-title">Portfolio Website</h3>
+										<time class="project-year">2025</time>
+									</div>
+									<p class="project-subtitle">
+										Using HTML, CSS, and JavaScript
+									</p>
+								</div>
+							</article>
+						</a>
+						<a
+							href="https://github.com/edwrdrvera/capstone-project"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="my-custom-link"
+						>
+							<div class="project-card">
+								<img src="images/pokelog.png" class="project-image" />
+								<div class="project-info">
+									<div class="title-year-container">
+										<h3 class="project-title">Pokelog API</h3>
+										<time class="project-year">2025</time>
+									</div>
+									<p class="project-subtitle">Typescript, Node.js, Express</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</section>
+				<section class="tech-stack-section">
+					<h2 class="page-title">TECH STACK</h2>
+					<figure class="tech-stack-icons">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="TypeScript logo"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="JavaScript logo"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="CSS logo"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="HTML logo"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="Python logo"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="Node.js logo"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="Git logo"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="Firebase logo"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="Figma logo"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="C# logo"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="AWS logo"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="Java logo"
+						/>
+
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+							class="tech-stack-icon"
+							height="50px"
+							width="50px"
+							alt="Express logo"
+						/>
+					</figure>
+				</section>
+			</main>
+		</div>
+		<script src="script.js"></script>
 	</body>
 </html>
