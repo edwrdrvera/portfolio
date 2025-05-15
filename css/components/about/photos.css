@@ -1,0 +1,15 @@
+.main-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.main-photo {
+	transition: all 0.5s ease;
+}
+
+.main-photo:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
