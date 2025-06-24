@@ -1,35 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Sidebar() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <aside className="sidebar">
+      <h1 className="logo">
+        <a href="/">エドワード</a>
+      </h1>
+
+      <nav className="sidebar-nav">
+        <div className="nav-links">
+          <a href="/about">About</a>
+          <a href="/cv">CV</a>
+        </div>
+
+        <div className="contact-section">
+          <h3 className="contact-header">Contact</h3>
+          <div className="contact-links">
+            <a
+              href="https://github.com/edwrdrvera"
+              className="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/edward-rivera-e1213"
+              className="contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a href="mailto:earivera.dev@outlook.com" className="contact-link">
+              Mail
+            </a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <>
+      <Sidebar />
+    </>
+  );
+}
+
+export default App;
