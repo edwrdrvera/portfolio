@@ -1,8 +1,14 @@
 /* Base */
-@import "assets/base/fonts.css";
+@import "assets/base/variables.css";
 @import "assets/base/reset.css";
 @import "assets/base/typography.css";
-@import "assets/base/variables.css";
+@import "assets/base/fonts.css";
 
 /* Layout */
 @import "assets/layout/sidebar.css";
+@import "assets/layout/container.css";
+
+/* Components */
+@import "assets/components/project-card.css";
+@import "assets/components/sections.css";
+@import "assets/components/tech-stack.css";
