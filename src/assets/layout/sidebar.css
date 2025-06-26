@@ -2,68 +2,68 @@
    Sidebar Navigation
    ========================================================================== */
 .sidebar {
-  width: 12rem;
-  height: 100vh;
-  border-right: 1px solid #eee;
-  padding: 1.5rem;
-  position: fixed;
-  left: 0;
-  top: 0;
-  display: flex;
-  flex-direction: column;
+    width: 12rem;
+    height: 100vh;
+    border-right: 1px solid #eee;
+    padding: 1.5rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar-nav {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .contact-header {
-  font-family: SFProMedium;
-  font-weight: 500;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  color: #adadad;
-  padding: 0;
+    font-family: SFProMedium;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: #adadad;
+    padding: 0;
 }
 
 .contact-link {
-  font-size: 1rem;
-  margin: 0.25rem 0rem;
+    font-size: 1rem;
+    margin: 0.25rem 0rem;
 }
 
 .contact-links {
-  margin-top: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding-bottom: 1rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .nav-links {
-  text-transform: uppercase;
-  font-family: SFProMedium;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  margin-top: 0.5rem;
-  font-size: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: SFProMedium;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .sidebar a {
-  display: block;
-  padding: 0;
-  color: #666;
-  transition-property: color;
-  transition-duration: 150ms;
+    display: block;
+    padding: 0;
+    color: #666;
+    transition-property: color;
+    transition-duration: 150ms;
 }
 
 .sidebar a:hover {
-  color: #000000;
+    color: #000000;
 }
