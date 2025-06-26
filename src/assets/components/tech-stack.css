@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Components
+   ========================================================================== */
+.tech-stack-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.tech-stack-icon {
+    filter: grayscale(1);
+    transition: filter 0.3s ease;
+}
+
+.tech-stack-icon:hover {
+    filter: grayscale(0);
+    transition: filter 0.3s ease;
+}
