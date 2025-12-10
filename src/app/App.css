@@ -1,1 +1,12 @@
+@font-face {
+    font-family: "BaseFont";
+    src: url("./assets/fonts/SF-Pro-Display-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import "tailwindcss";
+
+@theme {
+    --font-base: "BaseFont", sans-serif;
+}
