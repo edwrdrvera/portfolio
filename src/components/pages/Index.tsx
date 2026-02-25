@@ -1,9 +1,11 @@
+import HeroSection from "../common/HeroSection/HeroSection";
+
 const Index = () => {
-    return (
-        <div>
-            <h1>Welcome to the Index Page</h1>
-        </div>
-    );
+  return (
+    <div className="flex w-full p-8">
+      <HeroSection />
+    </div>
+  );
 };
 
 export default Index;
