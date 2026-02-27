@@ -19,7 +19,7 @@ const TypingAnimation = () => {
   }, []);
 
   return (
-    <div className="font-medium text-gray-900">
+    <div className="font-medium">
       {displayedText}
       <span className="animate-pulse text-gray">|</span>
     </div>
