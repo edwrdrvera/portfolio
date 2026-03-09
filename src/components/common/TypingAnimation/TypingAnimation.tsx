@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const TypingAnimation = () => {
-  const text = "Hello there! / ようこそ!";
+  const text = "hello there! / ようこそ!";
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
@@ -19,9 +19,9 @@ const TypingAnimation = () => {
   }, []);
 
   return (
-    <div className="font-medium">
+    <div className="font-normal tracking-tight">
       {displayedText}
-      <span className="animate-pulse text-gray">|</span>
+      <span className="animate-pulse text-gray-400 font-light">|</span>
     </div>
   );
 };
