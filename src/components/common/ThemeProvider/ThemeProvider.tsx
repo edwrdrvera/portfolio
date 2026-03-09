@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-type Theme = "dark" | "light";
+type Theme = "forest" | "light";
 
 type ThemeProviderProps = {
   children: React.ReactNode;
@@ -26,9 +26,11 @@ export function ThemeProvider({
   storageKey = "ui-theme",
   ...props
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(
-    () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
-  );
+  const [theme, setTheme] = useState<Theme>(() => {
+    const stored = localStorage.getItem(storageKey);
+    if (stored === "dark" || stored === "black") return "forest";
+    return (stored as Theme) || defaultTheme;
+  });
 
   useEffect(() => {
     const root = window.document.documentElement;
