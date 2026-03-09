@@ -37,14 +37,14 @@ const NavBar = () => {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <a href="#projects" onClick={(e) => handleScroll(e, 'projects')} className={linkStyle}>
-              projects
-            </a>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem>
             <a href="#experience" onClick={(e) => handleScroll(e, 'experience')} className={linkStyle}>
               experience
+            </a>
+          </NavigationMenuItem>
+          
+          <NavigationMenuItem>
+            <a href="#projects" onClick={(e) => handleScroll(e, 'projects')} className={linkStyle}>
+              projects
             </a>
           </NavigationMenuItem>
         </NavigationMenuList>
