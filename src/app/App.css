@@ -6,10 +6,11 @@
 }
 
 @import "tailwindcss";
-@plugin "daisyui" {
+
+/* @plugin "daisyui" {
   themes:
     light --default,
     dark --prefersdark,
-    forest;
-}
+} */
+
 @import "tw-animate-css";
