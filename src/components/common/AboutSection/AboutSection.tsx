@@ -1,7 +1,7 @@
 const AboutSection = () => {
   return (
     <section id="about" className="flex flex-col gap-6 w-full">
-      <h2 className="text-2xl font-bold font-mono">./about</h2>
+      {/* <h2 className="text-2xl font-bold font-mono">./about</h2>
       
       <div className="card bg-base-200 border border-base-content/10 transition-colors">
         <div className="card-body p-6 md:p-8">
@@ -24,7 +24,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
