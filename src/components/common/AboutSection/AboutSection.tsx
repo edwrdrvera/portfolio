@@ -47,7 +47,7 @@ const AboutSection = () => {
           </p>
           
           <div className="mt-6 flex flex-col gap-4">
-            <p className="text-base md:text-lg font-medium font-sf opacity-60 tracking-tight uppercase mb-1">tech stack</p>
+            <p className="text-base md:text-lg font-medium font-sf opacity-60 tracking-tight lowercase mb-1">tech stack.</p>
             
             <div className="flex flex-wrap gap-4 md:gap-7 items-center">
               {techStack.map((tech) => (
