@@ -3,13 +3,13 @@ const experiences = [
     company: "wclc",
     role: "software developer intern",
     date: "2024 - present",
-    description: "developing robust and scalable internal tools and applications using modern web technologies to support company operations."
+    description: "developing scalable api's and internal tools."
   },
   {
-    company: "red river college",
+    company: "rrc - application development and delivery",
     role: "student (software development)",
     date: "2024 - expected 2026",
-    description: "studying core computer science concepts, advanced web development, data structures, and software architecture."
+    description: "studying core computer science concepts, advanced web development, cloud, and data analysis."
   }
 ];
 
