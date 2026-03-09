@@ -1,14 +1,14 @@
 const AboutSection = () => {
   return (
     <section id="about" className="flex flex-col gap-6 w-full">
-      {/* <h2 className="text-2xl font-bold font-mono">./about</h2>
+      <h2 className="text-2xl font-bold font-mono">About</h2>
       
-      <div className="card bg-base-200 border border-base-content/10 transition-colors">
+      <div className="card bg-base-200 border border-base-content/10 transition-colors shadow-sm">
         <div className="card-body p-6 md:p-8">
-          <p className="opacity-90 font-sans mb-4">
+          <p className="opacity-90 font-sans mb-4 text-base md:text-lg">
             Hello! I'm <span className="font-bold">Edward</span>. I'm a passionate software developer with a strong focus on building clean, efficient, and user-centric web applications. Currently, I'm honing my skills as a Software Developer Intern at WCLC while pursuing my degree at RRC, aiming to graduate in Spring 2026.
           </p>
-          <p className="opacity-80 font-sans mb-6">
+          <p className="opacity-80 font-sans mb-6 text-base md:text-lg">
             My journey in tech is driven by an obsession with finding elegant solutions to complex problems. Whether it's architecting a robust backend API or crafting a seamless React frontend, I thrive on bringing ideas to life through code.
           </p>
           
@@ -24,7 +24,7 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </section>
   );
 };
