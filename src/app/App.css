@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "BaseFont";
+  src: url("./assets/fonts/SF-Pro-Display-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, forest --prefersdark;
+}
+
+@utility font-sf {
+  font-family: "BaseFont", sans-serif;
+}
+
+@import "tw-animate-css";
+
+/* Forest Theme Selection Highlight */
+@layer base {
+  [data-theme="forest"] ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-primary-content);
+  }
+}
+
+@layer components {
+  /* Specific styling for NavBar link active states based on current theme */
+  html[data-theme="light"] .nav-link:active {
+    background-color: oklch(0.9 0 0); /* Tailwind gray-200 equivalentish / neutral grey */
+    opacity: 1;
+  }
+  
+  html[data-theme="forest"] .nav-link:active {
+    background-color: var(--color-primary);
+    color: var(--color-primary-content);
+    opacity: 1;
+  }
+}
