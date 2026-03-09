@@ -16,7 +16,9 @@ const experiences = [
 const ExperienceSection = () => {
   return (
     <section id="experience" className="flex flex-col gap-6 w-full mt-4">
-      <h2 className="text-3xl font-sf font-bold tracking-tight">Experience</h2>
+      <h2 className="text-4xl md:text-5xl font-sf font-black uppercase tracking-[-0.05em] leading-none mb-2">
+        Experience
+      </h2>
       
       <div className="flex flex-col mt-2">
         {experiences.map((exp, index) => (

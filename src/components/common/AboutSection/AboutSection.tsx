@@ -1,7 +1,9 @@
 const AboutSection = () => {
   return (
     <section id="about" className="flex flex-col gap-6 w-full mt-4">
-      <h2 className="text-3xl font-sf font-bold tracking-tight">About</h2>
+      <h2 className="text-4xl md:text-5xl font-sf font-black uppercase tracking-[-0.05em] leading-none mb-2">
+        About
+      </h2>
       
       <div className="flex flex-col gap-4 mt-2">
         <p className="opacity-90 font-sans text-lg leading-relaxed">
