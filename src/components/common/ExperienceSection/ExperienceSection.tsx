@@ -3,7 +3,7 @@ const experiences = [
     company: "wclc",
     role: "software developer intern",
     date: "2026 - present",
-    description: "developing scalable api's and internal tools."
+    description: "developing scalable apis and internal tools."
   },
   {
     company: "rrc - application development and delivery",
