@@ -11,4 +11,8 @@
   themes: light --default, dark --prefersdark;
 }
 
+@utility font-sf {
+  font-family: "BaseFont", sans-serif;
+}
+
 @import "tw-animate-css";
