@@ -3,35 +3,35 @@ import { LucideExternalLink } from "lucide-react";
 const projects = [
   {
     title: "Kalend",
-    description: "A comprehensive calendar application designed to streamline scheduling with custom API endpoints and robust backend architecture.",
+    description: "A comprehensive calendar application designed for students.",
     features: [
       "Real-time event synchronization across multiple time zones",
-      "Customizable booking pages with automated conflict resolution",
-      "Advanced analytics dashboard for tracking meeting engagement"
+      "Courses and assignments",
+      "Grades and attendance"
     ],
-    tech: ["React", "Supabase", "Bun", "Tailwind 4"],
+    tech: ["Next.js", "Supabase", "Bun", "Tailwind 4"],
     link: "#"
   },
   {
     title: "QVax",
     description: "Developed during the .devHacks 2026 hackathon, an intuitive platform designed to manage and verify vaccination records securely.",
     features: [
-      "Secure patient data handling with end-to-end encryption",
+      "Secure patient data handling with authentication",
       "Automated appointment scheduling and smart reminders",
-      "Seamless QR code generation for rapid clinic check-ins"
+      "Patient and clinic management"
     ],
-    tech: ["React"],
+    tech: ["React", "Node.js", "Tailwind"],
     link: "#"
   },
   {
     title: "Tastebuds",
     description: "A social media application designed for sharing, discovering, and categorizing authentic restaurant reviews and recipes.",
     features: [
-      "Geolocation-based restaurant feed with interactive mapping",
-      "Social graph implementation for following friends and food critics",
-      "Dynamic bookmarking system with categorizable taste profiles"
+      "Restaurant feed with search and filters",
+      "User profiles with reviews and recipes",
+      "Restaurant and recipe bookmarking"
     ],
-    tech: ["React", "Express", "Node.js"],
+    tech: ["React", "Tailwind", "Express", "Neon", "Prisma"],
     link: "#"
   }
 ];
@@ -41,26 +41,22 @@ const ProjectsSection = () => {
     <section id="projects" className="flex flex-col gap-4 w-full mt-4">
       <h2 className="text-xl md:text-2xl font-bold font-sf tracking-tight lowercase">projects.</h2>
 
-      {/* Changed to a 2-column grid layout */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="group relative bg-base-100 border border-base-content/10 overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full w-full"
+            className="group relative bg-base-100 border border-base-content/10 overflow-hidden flex flex-col h-full w-full"
           >
-            {/* Subtle top glare effect for premium feel */}
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-base-content/20 to-transparent opacity-50 z-10"></div>
             
             <div className="p-5 md:p-6 flex flex-col h-full relative z-0">
               
               <div className="mb-3">
-                {/* Clean, readable title */}
                 <h3 className="text-base md:text-lg font-bold tracking-tight">
                   {project.title}
                 </h3>
               </div>
               
-              {/* Breathable description text */}
               <p className="opacity-80 font-sans text-xs md:text-sm leading-relaxed mb-5 max-w-4xl">
                 {project.description}
               </p>
