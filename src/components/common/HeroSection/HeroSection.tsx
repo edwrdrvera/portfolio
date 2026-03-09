@@ -16,10 +16,9 @@ const IntroSection = () => {
 const HeroBio = () => {
   return (
     <div className="mt-2 md:mt-4 flex flex-col md:flex-row items-center md:items-stretch gap-8 md:gap-12 relative z-10 w-full mb-8">
-      {/* Profile Image with subtle glow/shadow */}
-      <div className="w-full max-w-[240px] md:max-w-[300px] shrink-0 group">
-        <div className="relative overflow-hidden rounded-none shadow-2xl transition-transform duration-700 ease-out group-hover:scale-[1.02] h-full">
-          <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10 mix-blend-overlay"></div>
+      {/* Profile Image with subtle shadow */}
+      <div className="w-full max-w-[240px] md:max-w-[300px] shrink-0">
+        <div className="relative overflow-hidden rounded-none shadow-2xl h-full">
           <img
             src={profilePic}
             alt="Edward"
@@ -36,15 +35,15 @@ const HeroBio = () => {
         
         {/* Social Links to fill space interactively */}
         <div className="flex flex-col gap-3 justify-end items-start mt-8 md:mt-auto">
-          <a href="https://linkedin.com/in/edward-rivera" target="_blank" rel="noreferrer" className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1 group">
+          <a href="https://www.linkedin.com/in/riveraea/" target="_blank" rel="noreferrer" className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1 group">
             <FaLinkedin className="w-5 h-5 md:w-6 md:h-6 text-[#0A66C2] grayscale group-hover:grayscale-0 transition-all duration-300" />
             <span className="text-base md:text-lg font-medium lowercase">linkedin</span>
           </a>
-          <a href="https://github.com/edward-rivera" target="_blank" rel="noreferrer" className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1">
+          <a href="https://github.com/edwrdrvera" target="_blank" rel="noreferrer" className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1">
             <FaGithub className="w-5 h-5 md:w-6 md:h-6" />
             <span className="text-base md:text-lg font-medium lowercase">github</span>
           </a>
-          <a href="mailto:edward@example.com" className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1 group">
+          <a href="mailto:earivera.dev@outlook.com" className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1 group">
             <FaEnvelope className="w-5 h-5 md:w-6 md:h-6 text-[#EA4335] grayscale group-hover:grayscale-0 transition-all duration-300" />
             <span className="text-base md:text-lg font-medium lowercase">email</span>
           </a>
@@ -56,10 +55,7 @@ const HeroBio = () => {
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full flex flex-col pt-0 md:pt-4 pb-0 mx-auto min-h-[85vh] justify-center">
-      {/* Apple-style Magic Ambient Background */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] h-[90vw] max-w-[800px] max-h-[800px] bg-gradient-to-tr from-blue-400/10 via-purple-400/5 to-transparent rounded-full blur-3xl -z-10 pointer-events-none"></div>
-      
+    <section className="relative w-full flex flex-col pt-0 md:pt-4 pb-0 mx-auto min-h-[85vh] justify-center">      
       <div className="w-full">
         <IntroSection />
         <HeroBio />
