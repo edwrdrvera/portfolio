@@ -24,3 +24,17 @@
     color: var(--color-primary-content);
   }
 }
+
+@layer components {
+  /* Specific styling for NavBar link active states based on current theme */
+  html[data-theme="light"] .nav-link:active {
+    background-color: oklch(0.9 0 0); /* Tailwind gray-200 equivalentish / neutral grey */
+    opacity: 1;
+  }
+  
+  html[data-theme="forest"] .nav-link:active {
+    background-color: var(--color-primary);
+    color: var(--color-primary-content);
+    opacity: 1;
+  }
+}
