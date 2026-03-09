@@ -1,41 +1,42 @@
 const experiences = [
   {
-    company: "WCLC",
-    role: "Software Developer Intern",
-    date: "2024 - Present",
-    description: "Developing robust and scalable internal tools and applications using modern web technologies to support company operations."
+    company: "wclc",
+    role: "software developer intern",
+    date: "2024 - present",
+    description: "developing robust and scalable internal tools and applications using modern web technologies to support company operations."
   },
   {
-    company: "Red River College",
-    role: "Student (Software Development)",
-    date: "2024 - Expected 2026",
-    description: "Studying core computer science concepts, advanced web development, data structures, and software architecture."
+    company: "red river college",
+    role: "student (software development)",
+    date: "2024 - expected 2026",
+    description: "studying core computer science concepts, advanced web development, data structures, and software architecture."
   }
 ];
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="flex flex-col gap-6 w-full mt-4">
-      <h2 className="text-4xl md:text-5xl font-sf font-black uppercase tracking-[-0.05em] leading-none mb-2">
-        Experience
-      </h2>
+    <section id="experience" className="flex flex-col gap-4 w-full mt-4">
+      <h2 className="text-xl md:text-2xl font-bold font-sf tracking-tight lowercase">experience.</h2>
       
       <div className="flex flex-col mt-2">
         {experiences.map((exp, index) => (
-          <div key={index} className="flex flex-col gap-2 py-8 first:pt-4 border-b border-base-content/10 last:border-0 relative">
+          <div key={index} className="flex flex-col gap-2 py-6 first:pt-0 border-b border-base-content/10 last:border-0 relative">
             
-            <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 md:gap-4 mb-1">
-              <h3 className="text-xl font-bold tracking-tight">
+            <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-1 md:gap-4 mb-2">
+              <h3 className="text-lg md:text-xl font-medium tracking-tight lowercase">
                 {exp.role} <span className="opacity-50 font-normal">@ {exp.company}</span>
               </h3>
-              <span className="opacity-60 font-mono text-sm shrink-0">
+              <span className="opacity-50 font-sans text-sm md:text-base shrink-0 lowercase">
                 {exp.date}
               </span>
             </div>
             
-            <p className="opacity-80 font-sans text-lg leading-relaxed max-w-3xl">
-              {exp.description}
-            </p>
+            <ul className="flex flex-col gap-2">
+              <li className="flex gap-3 opacity-80 font-sans text-base md:text-lg items-start lowercase leading-relaxed max-w-3xl">
+                <span className="opacity-50 select-none">·</span>
+                <span>{exp.description}</span>
+              </li>
+            </ul>
             
           </div>
         ))}
