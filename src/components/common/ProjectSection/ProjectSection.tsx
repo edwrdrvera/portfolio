@@ -38,47 +38,48 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="flex flex-col gap-6 w-full mt-4">
-      <h2 className="text-4xl md:text-5xl font-sf font-black uppercase tracking-[-0.05em] leading-none mb-2 mt-4">
-        Projects
-      </h2>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 mt-2">
+    <section id="projects" className="flex flex-col gap-4 w-full mt-4">
+      <h2 className="text-xl md:text-2xl font-bold font-sf tracking-tight lowercase">projects.</h2>
+
+      {/* Changed to a 2-column grid layout */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="group relative bg-base-100 border border-base-content/10 rounded-3xl overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full"
+            className="group relative bg-base-100 border border-base-content/10 overflow-hidden transition-all duration-500 hover:shadow-xl hover:-translate-y-1 flex flex-col h-full w-full"
           >
             {/* Subtle top glare effect for premium feel */}
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-base-content/20 to-transparent opacity-50 z-10"></div>
             
-            <div className="p-6 md:p-8 flex flex-col h-full relative z-0">
+            <div className="p-5 md:p-6 flex flex-col h-full relative z-0">
               
-              <div className="mb-4">
-                <h3 className="text-xl md:text-2xl font-bold tracking-tight">
+              <div className="mb-3">
+                {/* Clean, readable title */}
+                <h3 className="text-base md:text-lg font-bold tracking-tight">
                   {project.title}
                 </h3>
               </div>
               
-              <p className="opacity-80 font-sans text-sm md:text-base leading-relaxed mb-6">
+              {/* Breathable description text */}
+              <p className="opacity-80 font-sans text-xs md:text-sm leading-relaxed mb-5 max-w-4xl">
                 {project.description}
               </p>
               
-              <ul className="flex flex-col gap-3 mb-8 w-full flex-1">
+              <ul className="flex flex-col gap-2 mb-6 w-full flex-1">
                 {project.features.map((feature, i) => (
-                  <li key={i} className="flex gap-3 opacity-80 text-sm leading-relaxed items-start">
-                    <span className="opacity-30 select-none mt-1 text-[8px] transform scale-75">●</span>
+                  <li key={i} className="flex gap-2.5 opacity-80 text-xs md:text-sm leading-relaxed items-start">
+                    <span className="opacity-30 select-none mt-[4px] text-[8px]">●</span>
                     <span className="font-medium">{feature}</span>
                   </li>
                 ))}
               </ul>
               
-              <div className="flex flex-wrap items-center justify-between gap-4 mt-auto pt-5 border-t border-base-content/10">
+              <div className="flex flex-wrap items-center justify-between gap-4 mt-auto pt-4 border-t border-base-content/10">
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1.5 bg-base-200 opacity-80 rounded-full text-[11px] font-semibold tracking-wide border border-base-content/5"
+                      className="px-2.5 py-1 bg-base-200 opacity-80 rounded-full text-[10px] md:text-[11px] font-semibold tracking-wide border border-base-content/5"
                     >
                       {tech}
                     </span>
@@ -87,7 +88,7 @@ const ProjectsSection = () => {
                 
                 <a 
                   href={project.link} 
-                  className="flex items-center gap-1.5 text-xs font-semibold opacity-50 hover:opacity-100 transition-opacity whitespace-nowrap group-hover:text-blue-500"
+                  className="flex items-center gap-1.5 text-xs font-semibold opacity-50 hover:opacity-100 transition-opacity whitespace-nowrap group-hover:text-primary"
                 >
                   View repo
                   <LucideExternalLink className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
