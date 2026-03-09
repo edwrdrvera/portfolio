@@ -3,9 +3,9 @@ import NavBar from "../NavBar/NavBar";
 
 const Layout = () => {
   return (
-    <div className="flex h-screen w-full">
+    <div className="flex w-full">
       <NavBar />
-      <main className="container mx-auto max-w-5xl pt-24 px-4">
+      <main className="w-full mx-auto max-w-5xl md:max-w-6xl pt-16 md:pt-20 px-4 md:px-6">
         <Outlet />
       </main>
     </div>
