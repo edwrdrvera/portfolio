@@ -1,3 +1,5 @@
+import SectionHeading from "@/components/ui/SectionHeading";
+
 const experiences = [
   {
     company: "wclc",
@@ -16,7 +18,7 @@ const experiences = [
 const ExperienceSection = () => {
   return (
     <section id="experience" className="flex flex-col gap-4 w-full mt-4">
-      <h2 className="text-xl md:text-2xl font-bold font-sf tracking-tight lowercase">experience.</h2>
+      <SectionHeading title="experience." />
       
       <div className="flex flex-col mt-2">
         {experiences.map((exp, index) => (

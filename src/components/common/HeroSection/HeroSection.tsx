@@ -55,7 +55,7 @@ const HeroBio = () => {
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full flex flex-col pt-0 md:pt-4 pb-0 mx-auto min-h-[85vh] justify-center">      
+    <section className="relative w-full flex flex-col pt-4 md:pt-12 pb-0 mx-auto min-h-[75vh] md:min-h-[80vh] justify-center mb-16 md:mb-24">      
       <div className="w-full">
         <IntroSection />
         <HeroBio />
