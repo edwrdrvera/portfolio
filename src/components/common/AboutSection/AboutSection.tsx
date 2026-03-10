@@ -39,12 +39,14 @@ const AboutSection = () => {
           </div>
         </div>
         
-        <div className="w-full md:w-5/12 lg:w-4/12 shrink-0 md:mt-2">
-          <img 
-            src={aboutPic} 
-            alt="Edward Rivera" 
-            className="w-full h-auto rounded-none shadow-xl filter contrast-[1.05]" 
-          />
+        <div className="w-full max-w-[240px] md:max-w-[300px] shrink-0 md:mt-2 mx-auto md:mx-0">
+          <div className="relative overflow-hidden rounded-none shadow-xl h-full">
+            <img 
+              src={aboutPic} 
+              alt="Edward Rivera" 
+              className="w-full h-full object-cover filter contrast-[1.05]" 
+            />
+          </div>
         </div>
       </div>
     </section>
