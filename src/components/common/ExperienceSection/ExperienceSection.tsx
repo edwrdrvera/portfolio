@@ -1,22 +1,10 @@
-const experiences = [
-  {
-    company: "wclc",
-    role: "software developer intern",
-    date: "2026 - present",
-    description: "developing scalable api's and internal tools."
-  },
-  {
-    company: "rrc - application development and delivery",
-    role: "student (software development)",
-    date: "2024 - expected 2026",
-    description: "studying core computer science concepts, advanced web development, cloud, and data analysis."
-  }
-];
+import { experiences } from "@/data/experience";
+import SectionHeading from "@/components/ui/SectionHeading";
 
 const ExperienceSection = () => {
   return (
     <section id="experience" className="flex flex-col gap-4 w-full mt-4">
-      <h2 className="text-xl md:text-2xl font-bold font-sf tracking-tight lowercase">experience.</h2>
+      <SectionHeading title="experience." />
       
       <div className="flex flex-col mt-2">
         {experiences.map((exp, index) => (
