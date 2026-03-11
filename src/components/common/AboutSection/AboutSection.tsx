@@ -4,7 +4,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="flex flex-col gap-4 w-full mt-4">
+    <section id="about" className="flex flex-col gap-4 w-full">
       <SectionHeading title="about." />
       
       <div className="flex flex-col md:flex-row gap-8 lg:gap-16 items-start">

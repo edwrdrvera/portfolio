@@ -1,5 +1,4 @@
 import AboutSection from "@/components/common/AboutSection/AboutSection";
-import ContactSection from "@/components/common/ContactSection/ContactSection";
 import ExperienceSection from "@/components/common/ExperienceSection/ExperienceSection";
 import HeroSection from "@/components/common/HeroSection/HeroSection";
 import ProjectsSection from "@/components/common/ProjectSection/ProjectSection";
@@ -14,7 +13,6 @@ export default function Index() {
           <AboutSection />
           <ExperienceSection />
           <ProjectsSection />
-          <ContactSection />
         </main>
       </div>
     </div>
