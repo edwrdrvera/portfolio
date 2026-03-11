@@ -17,7 +17,6 @@ const NavBar = () => {
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }
-    // Close mobile dropdown after clicking
     const activeElement = document.activeElement as HTMLElement;
     if (activeElement) {
       activeElement.blur();
@@ -34,7 +33,6 @@ const NavBar = () => {
         エドワード
       </Link>
 
-      {/* Desktop Menu */}
       <div className="hidden md:block">
         <NavigationMenu>
           <NavigationMenuList className="gap-1">
@@ -60,12 +58,10 @@ const NavBar = () => {
       </div>
 
       <div className="flex items-center gap-1 md:pl-2">
-        {/* Desktop Divider */}
         <div className="hidden md:block w-px h-5 bg-base-content/10 mr-2"></div>
         
         <ThemeToggle />
 
-        {/* Mobile Dropdown Menu */}
         <div className="dropdown dropdown-end md:hidden">
           <div tabIndex={0} role="button" aria-label="Toggle Menu" className="p-1.5 rounded-full hover:bg-base-200 transition-colors flex items-center justify-center opacity-70 hover:opacity-100 hover:scale-105 active:scale-95 duration-200">
             <Menu className="h-5 w-5" />
