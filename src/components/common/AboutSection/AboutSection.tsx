@@ -10,11 +10,10 @@ const AboutSection = () => {
       <div className="flex flex-col md:flex-row gap-8 lg:gap-16 items-start">
         <div className="flex-1 flex flex-col gap-4">
           <p className="opacity-80 font-sans text-base md:text-lg leading-relaxed lowercase max-w-3xl">
-            hello! i'm <span className="font-medium opacity-100">edward</span>. i'm a software developer with a strong focus on building clean, efficient, and user-centric web applications. 
-            currently, i am software developer intern at wclc while at my last term at rrc, aiming to graduate in spring 2026.
+            hello! i'm <span className="font-medium opacity-100">edward</span>. i'm a developer who's excited about building things end to end, and i'm always looking to learn and explore new technology along the way!
           </p>
           <p className="opacity-80 font-sans text-base md:text-lg leading-relaxed lowercase max-w-3xl">
-            my journey in tech is driven by the goal of creating solutions that make a difference. i enjoy solving complex problems and bringing ideas to life through code.
+            right now i'm expanding into asp.net, building on my full-stack background and picking up c# along the way.
           </p>
           
           <div className="mt-6 flex flex-col gap-4">
