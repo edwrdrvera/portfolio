@@ -11,7 +11,7 @@ const experiences = [
     company: "rrc - application development and delivery",
     role: "student (software development)",
     date: "jan 2024 - april 2026",
-    description: "studied full-stack development, databases, cloud infrastructure, devops, and secure coding and testing.
+    description: "studied full-stack development, databases, cloud infrastructure, devops, and secure coding and testing."
   }
 ];
 
