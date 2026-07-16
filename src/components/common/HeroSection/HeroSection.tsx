@@ -28,7 +28,7 @@ const HeroBio = () => {
       
       <div className="flex-1 flex flex-col justify-between max-w-4xl pt-2 lg:pt-4 pb-2 lg:pb-4">
         <p className="font-sans text-2xl md:text-3xl leading-tight opacity-90 lowercase text-left tracking-tight">
-          <span className="font-bold">edward</span> is a full-stack software developer working across react, typsecript, node.js, and postgresql.
+          <span className="font-bold">edward</span> is a full-stack software developer working across react, typescript, node.js, and postgresql.
           he's a recent rrc grad (spring 2026) with hands-on experience building production integrations during his internship at wclc.
         </p>
         
