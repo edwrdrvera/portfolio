@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "Kalend",
+    title: "Kalend - Ongoing",
     description: "A comprehensive calendar application designed for students.",
     features: [
       "Real-time event synchronization across multiple time zones",
@@ -30,7 +30,7 @@ export const projects = [
       "Restaurant and recipe bookmarking"
     ],
     tech: ["React", "Tailwind", "Express", "Neon", "Prisma"],
-    link: "https://github.com/mlim44/Tastebuds"
+    link: "https://github.com/edwrdrvera/Tastebuds"
   },
   {
     title: "Portfolio Website",
