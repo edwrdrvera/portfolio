@@ -1,5 +1,5 @@
 import aboutPic from "../../../assets/about.webp";
-import { techStack } from "@/data/about";
+import { techStack, aboutParagraphs } from "@/data/about";
 import SectionHeading from "@/components/ui/SectionHeading";
 
 const AboutSection = () => {
@@ -9,12 +9,22 @@ const AboutSection = () => {
       
       <div className="flex flex-col md:flex-row gap-8 lg:gap-16 items-start">
         <div className="flex-1 flex flex-col gap-4">
-          <p className="opacity-80 font-sans text-base md:text-lg leading-relaxed lowercase max-w-3xl">
-            hello! i'm <span className="font-medium opacity-100">edward</span>. i'm a developer who's excited about building things end to end, and i'm always looking to learn and explore new technology along the way!
-          </p>
-          <p className="opacity-80 font-sans text-base md:text-lg leading-relaxed lowercase max-w-3xl">
-            right now i'm expanding into asp.net, building on my full-stack background and picking up c# along the way.
-          </p>
+          {aboutParagraphs.map((block, i) =>
+            block.type === 'text' ? (
+              <p key={i} className="opacity-80 font-sans text-base md:text-lg leading-relaxed lowercase max-w-3xl">
+                {block.content}
+              </p>
+            ) : (
+              <div key={i} className="opacity-80 font-sans text-base md:text-lg leading-relaxed lowercase max-w-3xl">
+                <p>{block.label}</p>
+                <ul className="mt-1 ml-4 list-disc space-y-1">
+                  {block.items.map((item, j) => (
+                    <li key={j}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )
+          )}
           
           <div className="mt-6 flex flex-col gap-4">
             <p className="text-base md:text-lg font-medium font-sf opacity-60 tracking-tight lowercase mb-1">tech stack.</p>

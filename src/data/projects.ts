@@ -1,18 +1,19 @@
 export const projects = [
   {
-    title: "Kalend - Ongoing",
-    description: "A comprehensive calendar application designed for students.",
+    title: "Kalend",
+    description: "A student productivity app built around an integrated calendar and task manager.",
     features: [
-      "Real-time event synchronization across multiple time zones",
-      "Courses and assignments",
-      "Grades and attendance"
+      "Color-coded Spaces group events and tasks by course or project",
+      "Drag-to-create events on the week/day grid; right-click context menus for quick entry",
+      "Week, month, and day views with a collapsible sidebar agenda and mini-calendar"
     ],
     tech: ["Next.js", "Supabase", "Bun", "Tailwind 4"],
-    link: "#"
+    link: "https://github.com/edwrdrvera/Kalend",
+    siteLink: "https://kalend.space"
   },
   {
     title: "QVax",
-    description: "Developed during the .devHacks 2026 hackathon, an intuitive platform designed to manage and verify vaccination records securely.",
+    description: "Developed during the .devHacks 2026 hackathon, a platform for securely managing and verifying vaccination records for patients and clinics.",
     features: [
       "Secure patient data handling with authentication",
       "Automated appointment scheduling and smart reminders",
@@ -25,15 +26,15 @@ export const projects = [
     title: "Tastebuds",
     description: "A social media app designed for sharing, discovering, and categorizing authentic restaurant reviews and recipes.",
     features: [
-      "Restaurant feed with search and filters",
-      "User profiles with reviews and recipes",
-      "Restaurant and recipe bookmarking"
+      "User profiles with personal review and recipe history",
+      "Search and filter by cuisine, rating, or location",
+      "Save restaurants and recipes to personal collections"
     ],
     tech: ["React", "Tailwind", "Express", "Neon", "Prisma"],
     link: "https://github.com/edwrdrvera/Tastebuds"
   },
   {
-    title: "Portfolio Website",
+    title: "riveraea.dev",
     description: "My portfolio website for showcasing projects and skills.",
     features: [
       "Responsive design for optimal viewing on all devices",
@@ -41,7 +42,8 @@ export const projects = [
       "Easy navigation between projects and skills"
     ],
     tech: ["React", "Tailwind", "Vercel"],
-    link: "https://github.com/edwrdrvera/portfolio"
+    link: "https://github.com/edwrdrvera/portfolio",
+    siteLink: "https://riveraea.dev"
   },
   {
     title: "PokeLog API",

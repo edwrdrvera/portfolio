@@ -1,6 +1,7 @@
 import profilePic from "@/assets/edward.webp";
 import TypingAnimation from "../TypingAnimation/TypingAnimation";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { heroBio } from "@/data/hero";
 
 const IntroSection = () => {
   return (
@@ -28,20 +29,19 @@ const HeroBio = () => {
       
       <div className="flex-1 flex flex-col justify-between max-w-4xl pt-2 lg:pt-4 pb-2 lg:pb-4">
         <p className="font-sans text-2xl md:text-3xl leading-tight opacity-90 lowercase text-left tracking-tight">
-          <span className="font-bold">edward</span> is a full-stack software developer working across react, typescript, node.js, and postgresql.
-          he's a recent rrc grad (spring 2026) with hands-on experience building production integrations during his internship at wclc.
+          <span className="font-bold">{heroBio.name}</span> {heroBio.bio}
         </p>
         
         <div className="flex flex-col gap-3 justify-end items-start mt-8 md:mt-auto">
-          <a href="https://www.linkedin.com/in/riveraea/" target="_blank" rel="noreferrer" className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1 group">
+          <a href={heroBio.links.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1 group">
             <FaLinkedin className="w-5 h-5 md:w-6 md:h-6 text-[#0A66C2] grayscale group-hover:grayscale-0 transition-all duration-300" />
             <span className="text-base md:text-lg font-medium lowercase">linkedin</span>
           </a>
-          <a href="https://github.com/edwrdrvera" target="_blank" rel="noreferrer" className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1">
+          <a href={heroBio.links.github} target="_blank" rel="noreferrer" className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1">
             <FaGithub className="w-5 h-5 md:w-6 md:h-6" />
             <span className="text-base md:text-lg font-medium lowercase">github</span>
           </a>
-          <a href="mailto:earivera.dev@outlook.com" className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1 group">
+          <a href={heroBio.links.email} className="flex items-center gap-3 opacity-60 hover:opacity-100 transition-all duration-300 hover:-translate-y-1 group">
             <FaEnvelope className="w-5 h-5 md:w-6 md:h-6 text-[#EA4335] grayscale group-hover:grayscale-0 transition-all duration-300" />
             <span className="text-base md:text-lg font-medium lowercase">email</span>
           </a>
