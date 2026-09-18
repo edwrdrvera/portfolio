@@ -47,14 +47,31 @@ const ProjectsSection = () => {
                     </span>
                   ))}
                 </div>
-                
-                <a 
-                  href={project.link} 
-                  className="flex items-center gap-1.5 text-xs font-semibold opacity-50 hover:opacity-100 transition-opacity whitespace-nowrap group-hover:text-primary"
-                >
-                  View repo
-                  <LucideExternalLink className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                </a>
+
+                <div className="flex items-center gap-4">
+                  {project.siteLink && (
+                    <a
+                      href={project.siteLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 text-xs font-semibold opacity-50 hover:opacity-100 hover:text-primary transition-opacity whitespace-nowrap"
+                    >
+                      View site
+                      <LucideExternalLink className="w-3.5 h-3.5 transition-transform hover:translate-x-0.5 hover:-translate-y-0.5" />
+                    </a>
+                  )}
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 text-xs font-semibold opacity-50 hover:opacity-100 hover:text-primary transition-opacity whitespace-nowrap"
+                    >
+                      View repo
+                      <LucideExternalLink className="w-3.5 h-3.5 transition-transform hover:translate-x-0.5 hover:-translate-y-0.5" />
+                    </a>
+                  )}
+                </div>
               </div>
               
             </div>
