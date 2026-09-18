@@ -41,10 +41,19 @@ export type AboutBlock = TextBlock | ListBlock;
 export const aboutParagraphs: AboutBlock[] = [
   {
     type: 'text',
-    content: `hello! i'm edward. i'm a developer who's excited about building things end to end, and i'm always looking to learn and explore new technology along the way!`,
+    content: `hello! i'm edward. i'm a full-stack developer who loves building things and picking up new technologies along the way.
+    i recently graduated from rrc and spent the first half of 2026 interning at wclc where i mainly worked with integrations and backend systems.`,
+  },
+  {
+    type: 'list',
+    label: `right now, i'm:`,
+    items: [
+      `building kalend — a calendar and task manager i'm using as my own daily driver.`,
+      `expanding into asp.net core and getting deep into agentic ai.`,
+    ],
   },
   {
     type: 'text',
-    content: `right now i'm expanding into asp.net, building on my full-stack background and picking up c# along the way.`,
+    content: `currently looking for opportunities, so feel free to reach out!`,
   },
 ];
