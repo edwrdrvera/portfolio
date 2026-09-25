@@ -22,8 +22,8 @@
 /* Forest Theme Selection Highlight */
 @layer base {
   [data-theme="forest"] ::selection {
-    background-color: var(--color-primary);
-    color: var(--color-primary-content);
+    background-color: oklch(72% 0.07 155); /* muted sage to sit with forest's near-neutral base */
+    color: var(--color-base-100);
   }
 }
 
@@ -37,8 +37,8 @@
   }
 
   html[data-theme="forest"] .nav-link:active {
-    background-color: oklch(72% 0.07 155); /* muted sage to sit with forest's near-neutral base */
-    color: var(--color-base-100);
+    background-color: var(--color-primary);
+    color: var(--color-primary-content);
     opacity: 1;
   }
 }
