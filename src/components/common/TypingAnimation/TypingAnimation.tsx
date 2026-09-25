@@ -1,26 +1,21 @@
 import { useEffect, useState } from "react";
 
+const GREETING = "hello there! / ようこそ!";
+const TYPE_INTERVAL_MS = 50;
+
 const TypingAnimation = () => {
-  const text = "hello there! / ようこそ!";
-  const [displayedText, setDisplayedText] = useState("");
+  const [length, setLength] = useState(0);
+  const isDone = length >= GREETING.length;
 
   useEffect(() => {
-    let index = 0;
-    const intervalId = setInterval(() => {
-      if (index < text.length) {
-        setDisplayedText(text.substring(0, index + 1));
-        index++;
-      } else {
-        clearInterval(intervalId);
-      }
-    }, 50);
-
+    if (isDone) return;
+    const intervalId = setInterval(() => setLength((l) => l + 1), TYPE_INTERVAL_MS);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [isDone]);
 
   return (
     <div className="font-normal tracking-tight">
-      {displayedText}
+      {GREETING.slice(0, length)}
       <span className="animate-pulse text-gray-400 font-light">|</span>
     </div>
   );
