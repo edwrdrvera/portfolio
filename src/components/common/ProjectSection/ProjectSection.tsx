@@ -2,79 +2,43 @@ import { LucideExternalLink } from "lucide-react";
 import { projects } from "@/data/projects";
 import SectionHeading from "@/components/ui/SectionHeading";
 
+const ProjectLink = ({ href, label }: { href: string; label: string }) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-1 text-xs md:text-sm opacity-50 hover:opacity-100 transition-opacity whitespace-nowrap"
+  >
+    {label}
+    <LucideExternalLink className="w-3 h-3" />
+  </a>
+);
+
 const ProjectsSection = () => {
   return (
     <section id="projects" className="flex flex-col gap-4 w-full mt-4">
       <SectionHeading title="projects." />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+      <div className="flex flex-col mt-2">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="group relative bg-base-100 border border-base-content/10 overflow-hidden flex flex-col h-full w-full"
-          >
-            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-base-content/20 to-transparent opacity-50 z-10"></div>
-            
-            <div className="p-5 md:p-6 flex flex-col h-full relative z-0">
-              
-              <div className="mb-3">
-                <h3 className="text-base md:text-lg font-bold tracking-tight">
-                  {project.title}
-                </h3>
+          <div key={index} className="flex flex-col gap-1 py-4 first:pt-0 border-b border-base-content/10 last:border-0">
+            <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-1 md:gap-4">
+              <h3 className="text-base md:text-lg font-medium tracking-tight lowercase">
+                {project.title}
+              </h3>
+              <div className="flex items-center gap-4 shrink-0">
+                {project.siteLink && <ProjectLink href={project.siteLink} label="site" />}
+                {project.link && <ProjectLink href={project.link} label="repo" />}
               </div>
-              
-              <p className="opacity-80 font-sans text-xs md:text-sm leading-relaxed mb-5 max-w-4xl">
-                {project.description}
-              </p>
-              
-              <ul className="flex flex-col gap-2 mb-6 w-full flex-1">
-                {project.features.map((feature, i) => (
-                  <li key={i} className="flex gap-2.5 opacity-80 text-xs md:text-sm leading-relaxed items-start">
-                    <span className="opacity-30 select-none mt-[4px] text-[8px]">●</span>
-                    <span className="font-medium">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <div className="flex flex-wrap items-center justify-between gap-4 mt-auto pt-4 border-t border-base-content/10">
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="px-2.5 py-1 bg-base-200 opacity-80 rounded-full text-[10px] md:text-[11px] font-semibold tracking-wide border border-base-content/5"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex items-center gap-4">
-                  {project.siteLink && (
-                    <a
-                      href={project.siteLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 text-xs font-semibold opacity-50 hover:opacity-100 hover:text-primary transition-opacity whitespace-nowrap"
-                    >
-                      View site
-                      <LucideExternalLink className="w-3.5 h-3.5 transition-transform hover:translate-x-0.5 hover:-translate-y-0.5" />
-                    </a>
-                  )}
-                  {project.link && (
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 text-xs font-semibold opacity-50 hover:opacity-100 hover:text-primary transition-opacity whitespace-nowrap"
-                    >
-                      View repo
-                      <LucideExternalLink className="w-3.5 h-3.5 transition-transform hover:translate-x-0.5 hover:-translate-y-0.5" />
-                    </a>
-                  )}
-                </div>
-              </div>
-              
             </div>
+
+            <p className="opacity-80 font-sans text-sm md:text-base lowercase leading-snug max-w-3xl">
+              {project.description}
+            </p>
+
+            <p className="opacity-50 font-sans text-xs lowercase">
+              {project.tech.join(" · ")}
+            </p>
           </div>
         ))}
       </div>
