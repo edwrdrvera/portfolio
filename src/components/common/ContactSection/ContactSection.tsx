@@ -23,7 +23,7 @@ const ContactSection = () => {
         </a>
       </div>
       <div className="flex flex-1 items-center">
-        <h1 className="font-sans font-semibold text-[15vw] leading-[0.8] tracking-tighter lowercase text-center w-full whitespace-nowrap">
+        <h1 className="font-sans font-semibold text-[15vw] leading-[0.8] tracking-tighter lowercase text-center w-full whitespace-nowrap overflow-hidden py-[0.05em]">
           edward rivera
         </h1>
       </div>
