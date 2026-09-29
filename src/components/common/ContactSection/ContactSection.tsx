@@ -14,7 +14,7 @@ const ContactSection = () => {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: still ? "auto" : "smooth" });
           }}
-          className="group flex items-center gap-1.5 opacity-60 hover:opacity-100 transition-opacity"
+          className="group relative -m-3 flex items-center gap-1.5 p-3 opacity-60 hover:opacity-100 transition-opacity"
         >
           back to top
           <span aria-hidden className="inline-block transition-transform duration-500 ease-spring group-hover:-translate-y-1 motion-reduce:transition-none">
